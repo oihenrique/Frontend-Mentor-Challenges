@@ -9,27 +9,22 @@
 
 body {
     background-color: hsl(233, 47%, 7%);
-    width: 100%;
     font-size: 15px;
     overflow-x: hidden;
 }
 
-main {
-    padding: 10%;
-}
-
 /* Card content */
 .container {
-    width: 100%;
     background-color: hsl(244, 38%, 16%);
     color: hsla(0, 0%, 100%, 0.75);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    margin: 5.5em 8em 5.5em 8em;
 }
 
 .card {
-    padding: 6em;
+    padding: 4em;
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -81,8 +76,6 @@ main {
 footer {
     text-align: center;
     color: hsla(0, 0%, 100%, 0.75);
-    height: 5em;
-    padding: 2em;
 }
 
 footer a:hover {
