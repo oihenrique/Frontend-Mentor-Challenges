@@ -61,6 +61,36 @@ In this project, I learned about how to positioning elements with Flexbox, using
   }
 }
 ```
+___
+
+I learned how to use the tag ```<picture>``` to change the images according to the screen size.
+~~~html
+<div class="card-img">
+  <picture>
+    <source src="images/image-header-mobile.jpg" media="max-width: 375px">
+    <img src="images/image-header-desktop.jpg" width="500" height="460">
+  </picture>
+</div>
+~~~
+
+___
+
+To separate a container from the body, add some padding and don't use "em" as a metric to it, because it won't be resposive, it will be fixed according to the font-size, so, I used percentage.
+
+~~~css
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    overflow-x: hidden;
+    padding: 7.5%;
+}
+~~~
+
+___
+
+- Use ```max-width``` to control the size of your boxes;
+- Don't use "image" in the ```alt``` of the image tags, the screen readers know that it is a image;
+- If the image is just decorative, doesn't need add a ```alt``` in the image tag.
 
 ### Continued development
 
@@ -72,8 +102,10 @@ In this project, I learned about how to positioning elements with Flexbox, using
 
 ### Useful resources
 
-- [MDN - Basics of Flexbox](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) - This helped me to learn how Flexbox works.
-- [MDN Web Docs](https://developer.mozilla.org/pt-BR/) - I used this site to research HTML tags, CSS properties and Flexbox.
+- [MDN - Web Docs](https://developer.mozilla.org/pt-BR/) - I used this site to research HTML tags, CSS properties and Flexbox;
+- [MDN - Basics of Flexbox](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) - This helped me to learn how Flexbox works;
+- [MDN - Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - This will be helpful to learn how to use the `<picture>` tag.
+- [MDN - CSS Units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) - This is important to understand what unit use to define some element size.
 
 ## Author
 
